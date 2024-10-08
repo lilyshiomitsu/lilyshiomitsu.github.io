@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Shiomitsu's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Lily Shiomitsu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Lily Shiomitsu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile__pic-container">
+            <img 
+                id="profile-pic"
+                src="./assets/Lily-Shiomitsu-profile.png" 
+                alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hey, I'm</p>
+            <h1 class="title">Lily Shiomitsu</h1>
+            <p class="section__text__p2">and I am a <span id="element"></span></p>
+            
+
+            <!-- Typed.js library -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Lily Shiomitsu Resume.pdf')"
+                >Resume
+            </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href=('./#contact')"
+                >Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My Linkedin Profile"
+                    class="icon" 
+                    onclick="window.open('https://linkedin.com/in/lily-shiomitsu', '_blank')"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My GitHub Profile"
+                    class="icon" 
+                    onclick="window.open('https://github.com/lilyshiomitsu', '_blank')"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/Shiomitsu_Lily_033.jpg" 
+                    alt="About Picture"
+                    class="about-pic"
+                />
+            </div>
+            <!-- <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Science</p>
+                    </div>
+                </div> -->
+                <div class="text-container">
+                    <p> Hello! My name is Lily Shiomitsu, and I'm a third-year
+                        student majoring in 
+                        <a class="link" target="_blank" href="https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/">
+                        Computer Science</a> 
+                        and minoring in 
+                        <a class="link" target="_blank" href="https://catalog.northeastern.edu/undergraduate/social-sciences-humanities/cultures-societies-global-studies/spanish-minor/">
+                        Spanish</a>  
+                        at 
+                        <a class="link" target="_blank" href="https://www.khoury.northeastern.edu/">
+                        Northeastern University Khoury College of Computer Sciences.</a> 
+                        My journey in the tech world includes 
+                        valuable experiences as a Software Engineering Intern at 
+                        <a class="link" target="_blank" href="https://www.ukg.com/">
+                        UKG</a> 
+                        and as an Information Technology Training Co-op at 
+                        <a class="link" target="_blank" href="https://www.coverys.com/">
+                        Coverys.</a> 
+                        These opportunities have not only allowed me to hone my skills
+                        but also fueled my curiosity to explore the dynamic realm of coding. In my free
+                        time, I enjoy reading, playing the cello, and walking my dogs. 
+                        I am currently seeking co-op and internship opportunities for the Spring
+                        and Summer of 2025, and I am excited for what lies ahead!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="timeline">
+            <div class="container left-container">
+                <img 
+                    src="assets/ukg.png"
+                    class="logo"
+                >
+                <div class="text-box">
+                    <h2>Software Engineering Intern</h2>
+                    <h3>UKG (Ultimate Kronos Group)</h3>
+                    <small>May 2024 - Aug 2024</small><br>
+                    <small class="location">Lowell, MA</small>
+                    <ul>
+                        <li>Developed, implemented, and tested backend solutions for software defects using Java and JUnit in IntelliJ IDEA, enhancing code quality and reliability.</li>
+                        <li>Conducted Swagger API documentation and pseudo-locale testing, ensuring robust and accurate software localization and API integration.</li>
+                        <li>Collaborated in an Agile environment, contributing to daily standups, sprint planning, and cross-functional team discussions.</li>
+                        <li>Resolved customer and internal defects by diagnosing issues and implementing effective solutions, improving the user experience and system performance.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container right-container">
+                <img 
+                    src="assets/mit.png"
+                    class="logo"
+                >
+                <div class="text-box">
+                    <h2>AI/ML Fellow</h2>
+                    <h3>Massachusetts Institute of Technology</h3>
+                    <small>May 2024 - Present</small><br>
+                    <small class="location">Cambridge, MA</small>
+                    <ul>
+                        <li>Earned a Machine Learning certificate from Cornell University through a program hosted by the MIT Schwarzman
+                            College of Computing in collaboration with Break Through Tech.</li>
+                        <li>Gained comprehensive skills in building real-world AI solutions, with a focus on industry machine learning challenges.</li>
+                        <li>Currently serving as an AI Studio intern at Dropbox, working on developing a large language model (LLM) to enable AI-driven conversations about uploaded documents.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container left-container">
+                <img 
+                    src="assets/coverys.png"
+                    class="logo"
+                >
+                <div class="text-box">
+                    <h2>Information Technology Training Co-op</h2>
+                    <h3>Coverys: Medical Liability Insurance & Risk Solutions</h3>
+                    <small>Jan 2024 - May 2024</small><br>
+                    <small class="location">Boston, MA</small>
+                    <ul>
+                        <li>Created engaging articles, videos, and courses for software updates using SharePoint, Camtasia, SnagIt, and Audiate.</li>
+                        <li>Facilitated seamless onboarding sessions for new hires, delivering hands-on instructions to key applications.</li>
+                        <li>Collaborated with a team to redesign the main SharePoint site, enhancing user experience and simplifying navigation.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container right-container">
+                <img 
+                    src="assets/northeastern.png"
+                    class="logo"
+                >
+                <div class="text-box">
+                    <h2>Teaching Assistant for Discrete Structures</h2>
+                    <h3>Northeastern University</h3>
+                    <small>Sep 2023 - Dec 2024</small><br>
+                    <small class="location">Boston, MA</small>
+                    <ul>
+                        <li>CS 3000: Algorithms and Data and <br>CS 1800: Discrete Structures</li>
+                        <li>Held 5 hours of office hours per week to meet individual students for 
+                            academic support and tutoring
+                        </li>
+                        <li>Assisted in weekly recitations, helping an average of 30 students per week
+                            with academic support
+                        </li>
+                        <li>Provided faculty support in grading and reviewing assignments, as well as
+                            answering students' questions on Piazza
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">  
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/bullet-journal3.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                        <img
+                            src="./assets/bullet-journal.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Bullet Journal</h2>
+                    <p>Developed a comprehensive bullet journal application, allowing users 
+                        to create, load, and customize journals.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                            onclick="window.open('https://github.com/lilyshiomitsu/bullet-journal', '_blank')">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/battle-salvo.png"
+                            alt="Battle Salvo"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Battle Salvo</h2>
+                    <p>Engineered a dynamic Battle Salvo game supporting both human vs. AI and AI vs. AI gameplay through a proxy
+                        server with boards and ships of varying sizes.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                            onclick="window.open('https://github.com/lilyshiomitsu/battle-salvo', '_blank')">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-3.png"
+                        alt="Project 3"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Personal Website</h2>
+                <p>Utilized HTML, CSS, and JavaScript to create a clean, user-friendly layout, 
+                    showcasing experiences, skills, and projects.
+                    Ensured cross-browser compatibility for a seamless user experience</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container"> 
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./assets/java.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Java</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/python2.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Python</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/javascript.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">JavaScript</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/typescript.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">TypeScript</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/html.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">HTML</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/css.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">CSS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/sql.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">SQL</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/racket.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Racket</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container"> 
+                    <h2 class="experience-sub-title">Libraries/Frameworks/Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./assets/postman.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Postman</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/kubernetes.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Kubernetes</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/docker.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Docker</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/postgresql.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">PostgreSQL</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/junit.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">JUnit</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/numpy.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">NumPy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/pandas.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">pandas</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/matplotlib.png"
+                                alt="Experience icon"
+                                class="skills-icon"
+                            />
+                            <div>
+                                <p class="hidden-text">Matplotlib</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">shiomitsu.l@northeastern.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a target="_blank" href="https://www.linkedin.com/in/lily-shiomitsu">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Lily Shiomitsu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
